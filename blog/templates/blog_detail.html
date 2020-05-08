@@ -14,7 +14,7 @@
 
         {% for category in post.categories.all %}
 
-        <a href="{% url 'blog_category' category.name %}">
+        <a href="{% url 'blog_category' category.name %}" class="text-secondary">
 
             {{ category.name }}
 
