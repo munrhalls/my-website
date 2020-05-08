@@ -20,10 +20,10 @@
 
         {% for category in post.categories.all %}
 
-        <a href="{% url 'blog_category' category.name %}">
-
+        <a class="text-muted px-1" href="{% url 'blog_category' category.name %}">
+          <u>
             {{ category.name }}
-
+          </u>  
         </a>&nbsp;
 
         {% endfor %}
